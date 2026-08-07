@@ -1,0 +1,136 @@
+/* Configuração Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: #120822;
+    background-image: radial-gradient(#22103e 1px, transparent 1px);
+    background-size: 20px 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* Card do QG */
+.card-qg {
+    background-color: #2b1842;
+    border: 2px solid #4a2875;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 520px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+/* Ícone Topo */
+.vaca-emoji {
+    font-size: 50px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* Títulos */
+.titulo {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.titulo span {
+    color: #ffcc00;
+    font-size: 28px;
+}
+
+.titulo small {
+    font-size: 14px;
+    color: #b18bdc;
+}
+
+.subtitulo {
+    font-size: 13px;
+    color: #b18bdc;
+    margin-bottom: 25px;
+}
+
+/* Inputs e Botão */
+.painel-login {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.painel-login input {
+    background-color: #0c0617;
+    border: 1px solid #3d2160;
+    border-radius: 8px;
+    padding: 14px 16px;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.painel-login input:focus {
+    border-color: #00ff66;
+}
+
+.painel-login button {
+    background-color: #00e676;
+    border: none;
+    border-radius: 8px;
+    color: #000;
+    font-weight: bold;
+    padding: 14px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+}
+
+.painel-login button:hover {
+    background-color: #00c853;
+}
+
+.painel-login button:active {
+    transform: scale(0.98);
+}
+
+/* Terminal de Resposta */
+.terminal-container {
+    background-color: #05020a;
+    border: 1px solid #00ff66;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: left;
+    min-height: 80px;
+}
+
+.terminal-texto {
+    color: #00ff66;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.cursor {
+    animation: piscar 0.8s infinite;
+}
+
+@keyframes piscar {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}

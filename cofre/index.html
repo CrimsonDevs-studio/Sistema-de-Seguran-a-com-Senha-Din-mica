@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HQ do Rancho Central</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="card-qg">
+        <div class="topo-icone">
+            <span class="vaca-emoji">🐮</span>
+        </div>
+
+        <h1 class="titulo">
+            🤠 CENTRAL DO <span>QG</span> <small>(E DAS BOSTAS)</small>
+        </h1>
+
+        <p class="subtitulo">Gerenciamento Total de Galpão, Galinhas.</p>
+
+        <div class="painel-login">
+            <input type="text" id="usuario" placeholder="Quem diabo tá querendo entrar? (Nick)" autocomplete="off">
+            <input type="password" id="senha" placeholder="Qual é o código das galinhas? (Senha)">
+
+            <button id="btnAcessar" onclick="autenticar()">
+                🚪 ABRIR O COFRE DOS OUROS (OU DAS FERRAMENTAS)
+            </button>
+        </div>
+
+        <div class="terminal-container">
+            <div id="terminal" class="terminal-texto">
+                > 🐔 Aguardando código de acesso...<br>
+                Se errar três vezes, eu solto o bode, Zé.<br>
+                > <span class="cursor">█</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
